@@ -73,8 +73,8 @@ if __name__ == '__main__':
         else:
             print(outputs)
         cv2.imshow('image', image)
+        print("press any key to continue... (q or ESC to quit)")
         key = cv2.waitKey(0)
-        if key == 27:
+        if key in [27, 113]: # corresponding to esc and q
             cv2.destroyAllWindows()
             break
-            
