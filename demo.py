@@ -22,7 +22,7 @@ def imread_ex(filename, flags=-1):
         
         
 def draw_text(image, text, position, font_size=15, color=(255,0,0),
-              font_filename='data/simsun.ttc'):
+              font_filename='data/simkai.ttf'):
     assert isinstance(color, (tuple, list)) and len(color) == 3
     gray = color[0]
     if isinstance(image, np.ndarray):
